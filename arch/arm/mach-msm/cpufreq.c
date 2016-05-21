@@ -56,8 +56,8 @@ static unsigned long *mem_bw;
 
 #ifdef CONFIG_MSM_SLEEPER
 /* maxscroff */
-uint32_t maxscroff_freq = 1026000;
-uint32_t maxscroff = 0;
+uint32_t maxscroff_freq = 600000;
+uint32_t maxscroff = 1;
 #endif
 
 struct cpufreq_work_struct {
