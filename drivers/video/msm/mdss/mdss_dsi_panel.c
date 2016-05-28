@@ -680,6 +680,8 @@ static int mdss_dsi_panel_cont_splash_on(struct mdss_panel_data *pdata)
 		pdata->panel_info.no_solid_fill)
 		mdss_dsi_sw_reset(pdata);
 
+	lcd_notifier_call_chain(LCD_EVENT_ON_START);
+
 	mmi_panel_notify(MMI_PANEL_EVENT_DISPLAY_ON, NULL);
 
 #ifndef CONFIG_FB_MSM_MDSS_MDP3
